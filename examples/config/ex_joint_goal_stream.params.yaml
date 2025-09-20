@@ -1,0 +1,18 @@
+ex_joint_goal_stream_action:
+  ros__parameters:
+    waypoint_width: 6
+    joint_waypoints_flat: [
+      0.0, 0.0, -1.57, 0.0, 1.57, 0.0,
+      0.3, -1.0,  1.0,  0.2, 1.0,  0.2,
+      0.0, 0.0,   0.0,  0.0, 0.0,  0.0
+    ]
+    interp_step_rad: 0.003
+    interp_dt: 0.01
+    start_delay: 0.2
+    controller_topic: /cr5_group_controller/joint_trajectory
+    start_from_current: true
+    joint_states_topic: /joint_states
+    wait_js_timeout: 3.0
+    action_server_timeout: 5.0
+    result_timeout: 0.0
+    goal_time_tolerance: 0.2
